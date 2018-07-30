@@ -134,7 +134,7 @@ module RubyInstaller
   )
 
   ExtractUtils = OpenStruct.new(
-      :url_1 => 'http://downloads.sourceforge.net/sevenzip',
+      :url_1 => 'https://www.7-zip.org/a',
       :url_2 => 'http://downloads.sourceforge.net/mingw',
       :target => 'sandbox/extract_utils',
       :files => {
