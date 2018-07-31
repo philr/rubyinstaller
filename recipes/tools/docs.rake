@@ -19,6 +19,15 @@ rescue Gem::LoadError
   interpreters = []
 end
 
+class RDoc::Context
+  orig_compare = instance_method(:<=>)
+
+  define_method(:<=>) do |other|
+    return nil unless other.kind_of?(RDoc::Context)
+    orig_compare.bind(self).(other)
+  end
+end
+
 class RDoc::MethodAttr
   orig_compare = instance_method(:<=>)
 
