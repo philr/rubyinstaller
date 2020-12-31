@@ -129,7 +129,7 @@ module RubyInstaller
     :url => 'https://github.com/ConnorAtherton/rb-readline/archive',
     :target => 'sandbox/rb-readline',
     :files => [
-      'v0.5.3.zip'
+      'v0.5.0.zip'
     ]
   )
 
